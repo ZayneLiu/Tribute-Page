@@ -1,0 +1,28 @@
+#main {
+  display: flex;
+  flex-direction: column;
+}
+#title {
+  text-align: center;
+  font-size: 48px;
+}
+
+#img-div {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  /* main-axis */
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  width: 100%;
+  max-width: 744px;
+  max-height: 720px;
+  /* width: auto; */
+  height: auto;
+}

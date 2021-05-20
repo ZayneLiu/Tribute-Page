@@ -1,0 +1,164 @@
+<!--
+.User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
+.User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+.User Story #3: I should see a div element with a corresponding id="img-div".
+.User Story #4: Within the img-div element, I should see an img element with a corresponding id="image".
+.User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div.
+.User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
+.User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").
+.User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+.User Story #9: The img element should be centered within its parent element.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tribute-page</title>
+    <!-- import stylesheet .ccs file -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <h1 id="title">Steve Jobs</h1>
+      <div id="img-div">
+        <img id="image" src="Steve_Jobs_Headshot_2010.jpg" alt="Steve Jobs" />
+        <br />
+        <span id="img-caption">
+          Jobs presenting the <i>iPhone 4</i> in 2010
+        </span>
+      </div>
+      <div id="tribute-info">
+        <ul>
+          <li>
+            <p class="title">February 24, 1955:</p>
+            <p class="info">
+              Steven Paul Jobs is born in San Francisco to Joanne Carole
+              Schieble and Abdulfattah Jandali. The then-unmarried couple give
+              up their son to adoption. Paul and Clara Jobs become Jobs'
+              non-biological parents.
+            </p>
+          </li>
+          <li>
+            <p class="title">1961:</p>
+            <p class="info">
+              The Jobs family moves to Mountain View, Calif., part of what would
+              later become known as Silicon Valley.
+            </p>
+          </li>
+          <li>
+            <p class="title">1968:</p>
+            <p class="info">
+              Jobs calls Bill Hewlett, the co-founder and co-namesake of
+              Hewlett-Packard, looking for spare parts to build a frequency
+              counter. Hewlett gives Jobs the parts, as well as an internship
+              with the company that summer.
+            </p>
+          </li>
+          <li>
+            <p class="title">1970:</p>
+            <p class="info">
+              Meets future Apple co-founder Steve Wozniak through a friend. In
+              Wozniak's 2006 autobiography, "iWoz," he notes that the two "hit
+              it off" immediately, despite their four-year age difference.
+            </p>
+          </li>
+          <li>
+            <p class="title">1972:</p>
+            <p class="info">
+              Graduates from Homestead High School in Cupertino, Calif., and
+              enrolls at Reed College in Portland, Ore., only to drop out a
+              semester later. Jobs would go on to sit in on classes that
+              interested him, such as calligraphy, despite not getting credit
+              for them.
+            </p>
+          </li>
+          <li>
+            <p class="title">1974:</p>
+            <p class="info">
+              Begins a brief stint as an engineer at Atari. Working the night
+              shift, he employs Wozniak to help whittle down the hardware
+              required for a prototype of a single-player version of Pong, the
+              game that would go on to become Breakout. Jobs leaves Atari in the
+              summer to travel through India, only to return to California to
+              live in a commune.
+            </p>
+          </li>
+          <li>
+            <p class="title">January 3, 1977:</p>
+            <p class="info">Apple incorporates.</p>
+          </li>
+          <li>
+            <p class="title">June 5, 1977:</p>
+            <p class="info">
+              Releases the Apple II, the first commercially available personal
+              computer in a plastic case with color graphics--and Apple's first
+              successful personal computer.
+            </p>
+          </li>
+          <li>
+            <p class="title">December 12, 1980:</p>
+            <p class="info">
+              Apple goes public, putting Jobs' net worth north of $200 million.
+            </p>
+          </li>
+          <li>
+            <p class="title">1988:</p>
+            <p class="info">NeXT Computer releases its first computer.</p>
+          </li>
+          <li>
+            <p class="title">1993:</p>
+            <p class="info">
+              NeXT discontinues hardware business, gets into software instead.
+              The company is renamed NeXT Software, Inc.
+            </p>
+          </li>
+          <li>
+            <p class="title">November 29, 1995:</p>
+            <p class="info">
+              Becomes Pixar's president and CEO. Later in the year, Jobs brings
+              Pixar public, one week after the release of "Toy Story," with Tom
+              Hanks doing the voice of Woody and Tim Allen as Buzz Lightyear.
+              The film earns $192 million at the box office. Its success helps
+              make it quite attractive for celebrities to lend their voices to
+              animated characters.
+            </p>
+          </li>
+          <li>
+            <p class="title">December 10, 1996:</p>
+            <p class="info">
+              Returns to Apple, as an adviser, after it buys NeXT for $429
+              million.
+            </p>
+          </li>
+          <li>
+            <p class="title">July 9, 1997:</p>
+            <p class="info">
+              Becomes CEO, initially as the de facto chief, then as interim
+              chief in September.
+            </p>
+          </li>
+          <li>
+            <p class="title">May 6, 1998:</p>
+            <p class="info">
+              Introduces the iMac, which becomes commercially available in
+              August.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        Find more about <i>Steve Jobs</i>
+        <a
+          id="tribute-link"
+          href="https://en.wikipedia.org/wiki/Steve_Jobs"
+          target="_blank"
+          >this page</a
+        >.
+      </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
